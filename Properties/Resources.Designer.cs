@@ -63,9 +63,9 @@ namespace AksiyonAğTarama.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _5374_7727_232143 {
+        internal static System.Drawing.Bitmap _5374_7727_2321431 {
             get {
-                object obj = ResourceManager.GetObject("5374-7727-232143", resourceCulture);
+                object obj = ResourceManager.GetObject("5374-7727-2321431", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace AksiyonAğTarama.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _5374_7727_2321431 {
+        internal static System.Drawing.Bitmap fi_rr_eye {
             get {
-                object obj = ResourceManager.GetObject("5374-7727-2321431", resourceCulture);
+                object obj = ResourceManager.GetObject("fi-rr-eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fi_rr_eye1 {
+            get {
+                object obj = ResourceManager.GetObject("fi-rr-eye1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

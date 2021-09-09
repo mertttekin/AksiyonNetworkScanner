@@ -29,15 +29,16 @@ namespace AksiyonAğTarama
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.ATmetin = new System.Windows.Forms.Label();
-            this.Altmetin = new System.Windows.Forms.Label();
+            this.BtnAyarlar = new System.Windows.Forms.Button();
+            this.BtnFullTarama = new System.Windows.Forms.Button();
+            this.BtnMailKontrol = new System.Windows.Forms.Button();
             this.BtnİzlemePaneli = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Altmetin = new System.Windows.Forms.Label();
+            this.ATmetin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -46,9 +47,9 @@ namespace AksiyonAğTarama
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.BtnAyarlar);
+            this.panel1.Controls.Add(this.BtnFullTarama);
+            this.panel1.Controls.Add(this.BtnMailKontrol);
             this.panel1.Controls.Add(this.BtnİzlemePaneli);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -57,28 +58,86 @@ namespace AksiyonAğTarama
             this.panel1.Size = new System.Drawing.Size(150, 450);
             this.panel1.TabIndex = 0;
             // 
+            // BtnAyarlar
+            // 
+            this.BtnAyarlar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnAyarlar.FlatAppearance.BorderSize = 0;
+            this.BtnAyarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAyarlar.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAyarlar.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.BtnAyarlar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAyarlar.Image")));
+            this.BtnAyarlar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAyarlar.Location = new System.Drawing.Point(0, 405);
+            this.BtnAyarlar.Name = "BtnAyarlar";
+            this.BtnAyarlar.Size = new System.Drawing.Size(150, 45);
+            this.BtnAyarlar.TabIndex = 5;
+            this.BtnAyarlar.Text = "AYARLAR";
+            this.BtnAyarlar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAyarlar.UseVisualStyleBackColor = true;
+            // 
+            // BtnFullTarama
+            // 
+            this.BtnFullTarama.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnFullTarama.FlatAppearance.BorderSize = 0;
+            this.BtnFullTarama.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFullTarama.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFullTarama.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.BtnFullTarama.Image = ((System.Drawing.Image)(resources.GetObject("BtnFullTarama.Image")));
+            this.BtnFullTarama.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFullTarama.Location = new System.Drawing.Point(0, 213);
+            this.BtnFullTarama.Name = "BtnFullTarama";
+            this.BtnFullTarama.Size = new System.Drawing.Size(150, 45);
+            this.BtnFullTarama.TabIndex = 4;
+            this.BtnFullTarama.Text = "FULL TARAMA ";
+            this.BtnFullTarama.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnFullTarama.UseVisualStyleBackColor = true;
+            // 
+            // BtnMailKontrol
+            // 
+            this.BtnMailKontrol.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnMailKontrol.FlatAppearance.BorderSize = 0;
+            this.BtnMailKontrol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMailKontrol.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMailKontrol.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.BtnMailKontrol.Image = ((System.Drawing.Image)(resources.GetObject("BtnMailKontrol.Image")));
+            this.BtnMailKontrol.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMailKontrol.Location = new System.Drawing.Point(0, 168);
+            this.BtnMailKontrol.Name = "BtnMailKontrol";
+            this.BtnMailKontrol.Size = new System.Drawing.Size(150, 45);
+            this.BtnMailKontrol.TabIndex = 3;
+            this.BtnMailKontrol.Text = "MAİL KONTROL";
+            this.BtnMailKontrol.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnMailKontrol.UseVisualStyleBackColor = true;
+            // 
+            // BtnİzlemePaneli
+            // 
+            this.BtnİzlemePaneli.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnİzlemePaneli.FlatAppearance.BorderSize = 0;
+            this.BtnİzlemePaneli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnİzlemePaneli.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnİzlemePaneli.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.BtnİzlemePaneli.Image = ((System.Drawing.Image)(resources.GetObject("BtnİzlemePaneli.Image")));
+            this.BtnİzlemePaneli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnİzlemePaneli.Location = new System.Drawing.Point(0, 123);
+            this.BtnİzlemePaneli.Name = "BtnİzlemePaneli";
+            this.BtnİzlemePaneli.Size = new System.Drawing.Size(150, 45);
+            this.BtnİzlemePaneli.TabIndex = 2;
+            this.BtnİzlemePaneli.Text = "İZLEME PANELİ";
+            this.BtnİzlemePaneli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnİzlemePaneli.UseVisualStyleBackColor = true;
+            this.BtnİzlemePaneli.Click += new System.EventHandler(this.BtnİzlemePaneli_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel2.Controls.Add(this.Altmetin);
-            this.panel2.Controls.Add(this.ATmetin);
             this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.ATmetin);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 123);
             this.panel2.TabIndex = 1;
-            // 
-            // ATmetin
-            // 
-            this.ATmetin.AutoSize = true;
-            this.ATmetin.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ATmetin.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ATmetin.Location = new System.Drawing.Point(1, 78);
-            this.ATmetin.Name = "ATmetin";
-            this.ATmetin.Size = new System.Drawing.Size(147, 16);
-            this.ATmetin.TabIndex = 1;
-            this.ATmetin.Text = "AKSİYON TEKNOLOJİ";
             // 
             // Altmetin
             // 
@@ -91,84 +150,27 @@ namespace AksiyonAğTarama
             this.Altmetin.TabIndex = 1;
             this.Altmetin.Text = "Ağ tarama programı";
             // 
-            // BtnİzlemePaneli
+            // ATmetin
             // 
-            this.BtnİzlemePaneli.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnİzlemePaneli.FlatAppearance.BorderSize = 0;
-            this.BtnİzlemePaneli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnİzlemePaneli.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnİzlemePaneli.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.BtnİzlemePaneli.Image = global::AksiyonAğTarama.Properties.Resources.fi_rr_home2;
-            this.BtnİzlemePaneli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnİzlemePaneli.Location = new System.Drawing.Point(0, 123);
-            this.BtnİzlemePaneli.Name = "BtnİzlemePaneli";
-            this.BtnİzlemePaneli.Size = new System.Drawing.Size(150, 45);
-            this.BtnİzlemePaneli.TabIndex = 2;
-            this.BtnİzlemePaneli.Text = "İZLEME PANELİ";
-            this.BtnİzlemePaneli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnİzlemePaneli.UseVisualStyleBackColor = true;
+            this.ATmetin.AutoSize = true;
+            this.ATmetin.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ATmetin.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ATmetin.Location = new System.Drawing.Point(1, 78);
+            this.ATmetin.Name = "ATmetin";
+            this.ATmetin.Size = new System.Drawing.Size(147, 16);
+            this.ATmetin.TabIndex = 1;
+            this.ATmetin.Text = "AKSİYON TEKNOLOJİ";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.pictureBox1.Image = global::AksiyonAğTarama.Properties.Resources.logo1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.Image = global::AksiyonAğTarama.Properties.Resources.fi_rr_home2;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 168);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 45);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "MAİL KONTROL";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.Image = global::AksiyonAğTarama.Properties.Resources.fi_rr_home2;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 213);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 45);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "FULL TARAMA";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.Image = global::AksiyonAğTarama.Properties.Resources.fi_rr_home2;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 405);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 45);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "AYARLAR";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -197,9 +199,9 @@ namespace AksiyonAğTarama
         private System.Windows.Forms.Button BtnİzlemePaneli;
         private System.Windows.Forms.Label Altmetin;
         private System.Windows.Forms.Label ATmetin;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnAyarlar;
+        private System.Windows.Forms.Button BtnFullTarama;
+        private System.Windows.Forms.Button BtnMailKontrol;
     }
 }
 
