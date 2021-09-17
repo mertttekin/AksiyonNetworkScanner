@@ -73,6 +73,16 @@ namespace AksiyonAğTarama.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fi_rr_cross_small {
+            get {
+                object obj = ResourceManager.GetObject("fi-rr-cross-small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fi_rr_eye {
             get {
                 object obj = ResourceManager.GetObject("fi-rr-eye", resourceCulture);

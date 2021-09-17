@@ -52,10 +52,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAyarlar.Designer.cs">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFullTarama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFullTarama.Designer.cs">
+      <DependentUpon>FrmFullTarama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmizlemePaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmizlemePaneli.Designer.cs">
+      <DependentUpon>FrmizlemePaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMailKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMailKontrol.Designer.cs">
+      <DependentUpon>FrmMailKontrol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFullTarama.resx">
+      <DependentUpon>FrmFullTarama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fi-rr-eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fi-rr-cross-small.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
