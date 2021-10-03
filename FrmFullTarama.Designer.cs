@@ -66,7 +66,7 @@ namespace AksiyonAğTarama
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(18, 190);
+            this.label3.Location = new System.Drawing.Point(18, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 7;
@@ -79,9 +79,9 @@ namespace AksiyonAğTarama
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.panel2.Location = new System.Drawing.Point(181, 190);
+            this.panel2.Location = new System.Drawing.Point(79, 297);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(272, 25);
+            this.panel2.Size = new System.Drawing.Size(225, 25);
             this.panel2.TabIndex = 8;
             // 
             // lblStatus
@@ -103,7 +103,7 @@ namespace AksiyonAğTarama
             this.listVAddr.HideSelection = false;
             this.listVAddr.Location = new System.Drawing.Point(21, 12);
             this.listVAddr.Name = "listVAddr";
-            this.listVAddr.Size = new System.Drawing.Size(432, 168);
+            this.listVAddr.Size = new System.Drawing.Size(589, 265);
             this.listVAddr.TabIndex = 6;
             this.listVAddr.UseCompatibleStateImageBehavior = false;
             this.listVAddr.View = System.Windows.Forms.View.Details;
@@ -134,13 +134,14 @@ namespace AksiyonAğTarama
             this.cmdScan.TabIndex = 9;
             this.cmdScan.Text = "Aralık Tara";
             this.cmdScan.UseVisualStyleBackColor = false;
+            this.cmdScan.Click += new System.EventHandler(this.cmdScan_Click);
             // 
             // txtIP2
             // 
             this.txtIP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txtIP2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIP2.Location = new System.Drawing.Point(169, 222);
+            this.txtIP2.Location = new System.Drawing.Point(160, 328);
             this.txtIP2.Name = "txtIP2";
             this.txtIP2.Size = new System.Drawing.Size(144, 24);
             this.txtIP2.TabIndex = 11;
@@ -151,7 +152,7 @@ namespace AksiyonAğTarama
             this.txtIP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txtIP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIP.Location = new System.Drawing.Point(21, 221);
+            this.txtIP.Location = new System.Drawing.Point(21, 328);
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(133, 24);
             this.txtIP.TabIndex = 10;
@@ -170,6 +171,7 @@ namespace AksiyonAğTarama
             this.cmdStop.TabIndex = 12;
             this.cmdStop.Text = "Durdur";
             this.cmdStop.UseVisualStyleBackColor = false;
+            this.cmdStop.Click += new System.EventHandler(this.cmdStop_Click);
             // 
             // FrmFullTarama
             // 
@@ -189,7 +191,7 @@ namespace AksiyonAğTarama
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFullTarama";
             this.Text = "FullTarama";
-          //  this.Load += new System.EventHandler(this.FrmFullTarama_Load);
+            this.Load += new System.EventHandler(this.FrmFullTarama_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
